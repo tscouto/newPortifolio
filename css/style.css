@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: bisque;
+}
+
+section {
+  margin: 50px;
+  background-color: white;
+  height: 800px;
+  border-radius: 3%;
+  box-shadow: 2px 2px 20px 0px black;
+}
+
+.direta {
+  width: 500px;
+  float: left;
+  height: 800px;
+  background-color: #cc4b2c;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.nav ul li {
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+.nav ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+.sobre {
+  /* text-align: center; */
+  height: 800px;
+}
+
+.sobre h1 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #cc4b2c;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
+}
+.sobre h2 {
+  margin-bottom: 30px;
+  color: #cc4b2c;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+}
+.sobre button {
+  padding: 15px;
+  background-color: #cc4b2c;
+  color: white;
+  border: none;
+  border-radius: 8%;
+  width: 180px;
+}
+
+.sobre button:hover {
+  cursor: pointer;
+}
+
+.sobre,
+div.esquerda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#img-Foto {
+  width: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+div.icones {
+  margin: 20px 0px;
+}
+.icones img {
+  width: 50px;
+  height: 50px;
+  height: 50px;
+  padding-left: 10px;
+}
