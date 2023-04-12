@@ -36,13 +36,22 @@ section {
   padding-bottom: 30px;
   font-size: 25px;
   font-weight: bolder;
-  color: white;
+  
 }
-.nav ul li:hover {
+
+.nav ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  
+}
+.nav ul li a:hover {
   color: black;
   cursor: pointer;
 }
-.sobre {
+
+/* Configuracao especifica da pagina index */
+div.sobre {
   /* text-align: center; */
   height: 800px;
 }
@@ -99,3 +108,33 @@ div.icones {
   height: 50px;
   padding-left: 10px;
 }
+
+
+
+
+/* Pagina Sobre.html */
+.sobre-text {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  color: #cc4b2c;
+
+}
+.sobre-text h1{
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+#text {
+  
+  margin: 40px 100px;
+  text-align: justify;
+  font-family: "Anton", sans-serif;
+  color: #cc4b2c;
+  text-indent: 100px;
+
+}
+
+
