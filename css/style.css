@@ -12,7 +12,7 @@ section {
   margin: 50px;
   background-color: white;
   height: 800px;
-  border-radius: 3%;
+  border-radius: 20px;
   box-shadow: 2px 2px 20px 0px black;
 }
 
@@ -21,8 +21,8 @@ section {
   float: left;
   height: 800px;
   background-color: #cc4b2c;
-  border-top-left-radius: 3%;
-  border-bottom-left-radius: 3%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .nav {
@@ -36,14 +36,12 @@ section {
   padding-bottom: 30px;
   font-size: 25px;
   font-weight: bolder;
-  
 }
 
-.nav ul li a{
+.nav ul li a {
   list-style: none;
   text-decoration: none;
   color: white;
-  
 }
 .nav ul li a:hover {
   color: black;
@@ -77,7 +75,7 @@ div.sobre {
   background-color: #cc4b2c;
   color: white;
   border: none;
-  border-radius: 8%;
+  border-radius: 20px;
   width: 180px;
 }
 
@@ -109,9 +107,6 @@ div.icones {
   padding-left: 10px;
 }
 
-
-
-
 /* Pagina Sobre.html */
 .sobre-text {
   height: 800px;
@@ -120,21 +115,77 @@ div.icones {
   flex-direction: column;
   margin-top: 40px;
   color: #cc4b2c;
-
 }
-.sobre-text h1{
-  margin-top: 90px;
+.sobre-text h1 {
+  margin-top: 30px;
   margin-bottom: 70px;
 }
 
 #text {
-  
-  margin: 40px 100px;
+  margin: 40px 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
-  color: #cc4b2c;
+  color: black;
   text-indent: 100px;
-
 }
 
+/* Pagina Formacao.html  */
 
+.sobre-formacao {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 40px; */
+  color: #cc4b2c;
+}
+div.icones-tecnologia {
+  width: 300px;
+  text-align: center;
+}
+div.icones-tecnologia,
+h1 {
+  margin-bottom: 30px;
+}
+
+.icones-tecnologia img {
+  width: 40px;
+}
+
+div.Academica {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Anton", sans-serif;
+  font-weight: bolder;
+  border-radius: 30px;
+}
+
+div.Linguagens {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: "Anton", sans-serif;
+  font-weight: bolder;
+  border-radius: 30px;
+}
+
+div.SST {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: "Anton", sans-serif;
+  font-weight: bolder;
+  border-radius: 30px;
+}
