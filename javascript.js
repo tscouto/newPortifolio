@@ -27,8 +27,10 @@ var idade = calcularIdade(dataNascimento);
 // console.log(idade)
 
 // About
+
+
 const text = document.getElementById('text')
-text.innerHTML = `Olá, meu nome é Tiago, tenho ${this.idade} anos, sou do estado de Santa 
+text.innerText = `Olá, meu nome é Tiago, tenho ${this.idade} anos, sou do estado de Santa 
   Catarina, mais precisamentemoro na cidade de Imbituba. Amante da tecnologia e facinado por 
   livros de ficção fantasia e científica.No começo da minha jornada de trabalho, minha área 
   foi na segurança do trabalho, com objetivo em busca de redução de acidentes. 
@@ -44,3 +46,4 @@ text.innerHTML = `Olá, meu nome é Tiago, tenho ${this.idade} anos, sou do esta
   área de programação.`
 
 document.appendChild(text)
+
