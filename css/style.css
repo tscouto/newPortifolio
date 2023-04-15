@@ -122,7 +122,17 @@ div.icones {
 }
 
 #text {
-  margin: 40px 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-family: "Anton", sans-serif;
+  color: black;
+  text-indent: 100px;
+}
+
+#text1 {
+  margin: 0 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
   color: black;
@@ -165,18 +175,12 @@ div.Academica {
   font-weight: bolder;
   border-radius: 30px;
   cursor: pointer;
-  
 }
 
-div.Academica:hover{
+div.Academica:hover {
   background-color: #645b5b;
-
   cursor: pointer;
-  
 }
-
-
-
 
 div.Linguagens {
   background-color: #444444;
@@ -188,6 +192,10 @@ div.Linguagens {
   font-family: "Anton", sans-serif;
   font-weight: bolder;
   border-radius: 30px;
+}
+div.Linguagens:hover {
+  background-color: #645b5b;
+  cursor: pointer;
 }
 
 div.SST {
@@ -201,54 +209,114 @@ div.SST {
   font-weight: bolder;
   border-radius: 30px;
 }
-
-
-/* teste */
-
-#fade{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100% ;
-  background-color: rgba(0,0,0,0.6);
-  z-index: 5;
+div.SST:hover {
+  background-color: #645b5b;
+  cursor: pointer;
 }
 
-#modal {
+dialog::backdrop {
+  background-color: rgb(0 0 0 /0.5);
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 /0.3);
+  padding: 50px;
+  width: 800px;
+  height: 330px;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 10;
-  width: 500px;
-  max-width: 90%;
-  padding: 1.2rem;
+
+  /* text-align: center; */
+
+  /* flex-direction: column; */
+}
+.button-closser {
+  width: 80px;
+  padding: 8px;
+  border: none;
   border-radius: 0.5rem;
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+  left: 50%;
+  background-color: #2848e9;
+  cursor: pointer;
+}
+.button-closser:hover {
+  background-color: darkgrey;
 }
 
-.modal-header {
+/* segundo teste */
+
+img.teste-img {
+  width: 40px;
+}
+
+.lado-foto-text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem ;
+}
+.p-dialogo {
+  margin-bottom: 10px;
+}
+.h2-Cedup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.p-conclusao {
+  background-color: #e3dbdb;
+  margin-bottom: 10px;
 }
 
-.modal-body p {
-  margin-bottom: 1rem;
-} 
+/* teste */
 
-#modal.hide,
-#fade.hide {
-  display: none;
-}
-
-#fade,#modal{
-  transition: .5s;
-  opacity: 1;
-  pointer-events: all;
-}
-
+/* #fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+  }
+  
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem ;
+  }
+  
+  .modal-body p {
+    margin-bottom: 1rem;
+  } 
+  
+  #modal.hide,
+  #fade.hide {
+    display: none;
+  }
+  
+  #fade,#modal{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+  } */
