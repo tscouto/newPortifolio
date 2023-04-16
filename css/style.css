@@ -151,7 +151,7 @@ div.icones {
   color: #cc4b2c;
 }
 div.icones-tecnologia {
-  width: 300px;
+  width: 390px;
   text-align: center;
 }
 div.icones-tecnologia,
@@ -161,9 +161,10 @@ h1 {
 
 .icones-tecnologia img {
   width: 40px;
+  padding-left: 3px;
 }
 
-div.Academica {
+.Academica {
   background-color: #444444;
   color: white;
   text-align: center;
@@ -177,12 +178,12 @@ div.Academica {
   cursor: pointer;
 }
 
-div.Academica:hover {
+.Academica:hover {
   background-color: #645b5b;
   cursor: pointer;
 }
 
-div.Linguagens {
+.Linguagens {
   background-color: #444444;
   color: white;
   text-align: center;
@@ -224,36 +225,45 @@ dialog {
   box-shadow: 0 0 1em rgb(0 0 0 /0.3);
   padding: 50px;
   width: 800px;
-  height: 330px;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  /* text-align: center; */
-
-  /* flex-direction: column; */
 }
-.button-closser {
+
+#dialog-SST {
+  height: 700px;
+}
+
+#tempo-de-curso {
+  color: darkgray;
+}
+
+.button {
+  border: none;
   width: 80px;
   padding: 8px;
-  border: none;
   border-radius: 0.5rem;
   text-align: center;
   margin-top: 20px;
-  position: fixed;
-  left: 50%;
+  margin-left: 45%;
   background-color: #2848e9;
   cursor: pointer;
+  box-shadow: none;
 }
-.button-closser:hover {
+.button:hover {
   background-color: darkgrey;
 }
 
+
 /* segundo teste */
 
-img.teste-img {
+#unicesumar {
   width: 40px;
+}
+#cedup {
+  width: 50px;
+  height: 30px;
 }
 
 .lado-foto-text {
@@ -264,12 +274,37 @@ img.teste-img {
   margin-bottom: 10px;
 }
 .h2-Cedup {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 .p-conclusao {
-  background-color: #e3dbdb;
+  margin-top: 20px;
   margin-bottom: 10px;
+  font-weight: bolder;
+  font-family: "Anton", sans-serif;
+}
+.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a#Certificado {
+  color: #ba1d1d;
+  font-weight: bolder;
+}
+.h2-Cabecario {
+  margin-bottom: 10px;
+}
+
+.li-cinza {
+  padding: 3px;
+  background-color: rgb(161, 159, 159);
+}
+.li {
+  padding: 3px;
+  background-color: rgb(222, 215, 215);
+}
+.h3-cabecario{
+  margin: 10px 0;
 }
 
 /* teste */

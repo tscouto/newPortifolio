@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Document</title>
   </head>
 
@@ -24,59 +29,255 @@
       </div>
 
       <div class="esquerda">
-        <div class="sobre-formacao" title="Formacao">
+        <div class="sobre-formacao">
           <h1>Técnologias e Ferramentas Principais</h1>
           <div class="icones-tecnologia">
-            <img src="image/icon git.png" alt="" />
-            <img src="image/icon bitburket .png" alt="" />
-            <img src="image/icon excel.png" alt="" />
-            <img src="image/icon jira.png" alt="" />
-            <img src="image/icon scrum.png" alt="" />
-            <img src="image/icon trello.png" alt="" />
-            <img src="image/icone html.png" alt="" />
-            <img src="image/icone css.png" alt="" />
-            <img src="image/power BI.png" alt="" />
-            <img src="image/vba icon.png" alt="" />
-            <img src="image/GitHub icone.png" alt="" />
+            <img src="image/icon git.png" title="Git" />
+            <img src="image/icon bitburket .png" title="BitBurket" />
+            <img src="image/icon excel.png" title="Excel" />
+            <img src="image/icon access.png" title="Access" />
+            <img src="image/icon jira.png" title="Jira" />
+            <img src="image/icon scrum.png" title="Scrum" />
+            <img src="image/icon trello.png" title="Trello" />
+            <img src="image/icone html.png" title="html" />
+            <img src="image/icone css.png" title="css" />
+            <img src="image/power BI.png" title="PowerBI" />
+            <img src="image/vba icon.png" title="VBA (Visual Basic)" />
+            <img src="image/GitHub icone.png" title="GitHub" />
+            <img src="image/icone C.png" title="Linguagem C" />
+            <img src="image/ICON NODE js].png" title="NODE JS" />
+            <img src="image/icon uml.png" title="Unified Modeling Language" />
+            <img src="image/icon SQLLite.png" title="SQLLite" />
           </div>
 
           <div class="Academica">Formação Academica</div>
-          <dialog>
+          <dialog id="dialog-formacao">
             <div class="lado-foto-text">
               <h2 class="h2-unicesumar">
                 Centro Universitário de Maringá - Unicesumar
               </h2>
-              <img class="teste-img" src="image/logo unicesumar.png" alt="" />
+              <img id="unicesumar" src="image/logo unicesumar.png" alt="" />
             </div>
 
             <p class="p-dialogo">Barachel Engenharia de Software (Cursando)</p>
             <p class="p-dialogo">Carga Horária - 3000 horas</p>
-            <p class="p-dialogo">
+            <p class="p-dialogo" id="tempo-de-curso">
               Início - Janeiro 2022 / Final - Dezembro 2025
             </p>
 
-            <hr />
+            <hr class="hr" />
+
             <div class="lado-foto-text">
               <h2 class="h2-Cedup">Cedup Diomício Freitas</h2>
-              <img class="teste-img" src="image/logo CEDUP.png" alt="" />
+              <img id="cedup" src="image/logo CEDUP.png" alt="" />
             </div>
             <p class="p-dialogo">Técnico em Segurança do Trabalho</p>
             <p class="p-dialogo">Carga Horária - 1600 horas</p>
-            <p class="p-dialogo">Início - Maio 2009 / Final - Dezembro 2010</p>
+            <p class="p-dialogo" id="tempo-de-curso">
+              Início - Maio 2009 / Final - Dezembro 2010
+            </p>
 
             <p class="p-conclusao">
               Certificado de conclusão de curso de técnico em segurança do
               trabalho
             </p>
-            <p>
-              <a href="" target="_blank">Certificado de Conclusão de Curso</a>
-            </p>
 
-            <button class="button-closser">Fechar</button>
+            <a id="Certificado" href="" target="_blank">
+              <i class="fa fa-certificate"> </i> Certificado de Conclusão de
+              Curso
+            </a><br>
+
+            <div class="button">Fechar</div>
           </dialog>
 
-          <div class="Linguagens">Linguagens de Programação e Ferramentas</div>
+          <div class="Linguagens">Linguagens de Programação e Metodologia</div>
+          <dialog id="dialog-linguagens">
+            <h2 class="h2-Cabecario">Linguagens de Programação,Metodologia e Técnologia</h2>
+            <h3 class="h3-cabecario">Programas, Laudos e documentações</h3>
+            <ul>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> VBA - Visual Basic
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> JavaScript
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> HTML
+              </li>
+              <li class="li"><i class="fa fa-arrow-circle-right"></i> CSS</li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> NODE.JS
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> Linguagem C
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> SQLite
+              </li>
+            
+            </ul>
+            <h3 class="h3-cabecario">Metodologia e tecnolgias de uso</h3>
+            <ul>
+              <li class="li"><i class="fa fa-arrow-circle-right"></i> Excel</li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> Access
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> PowerBI
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> Programação Orientada a
+                Objetos
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> Diagramas UML
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> Metodologia Scrum
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> Estruturas de Dados
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> Git
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> Git Hub
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> Jira
+              </li>
+              <li class="li">
+                <i class="fa fa-arrow-circle-right"></i> Trello
+              </li>
+              <li class="li-cinza">
+                <i class="fa fa-arrow-circle-right"></i> BitBurket
+              </li>
+            </ul>
+
+            <div class="button">Fechar</div>
+          </dialog>
           <div class="SST">Habilidades na área SST NHO</div>
+          <dialog id="dialog-SST">
+            
+              <h2 class="h2-Cabecario">
+                Habilidades com documentação, metodologia e treinamentos na área de SST.
+              </h2>
+              <h3 class="h3-cabecario">Programas, Laudos e documentações</h3>
+              <ul>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> PCMSO - Programa de Controle Médico de Saúde Ocupacional  
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> LTCAT - Laudo Técnico das Condições Ambientais 
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> LTIP - Laudo Técnico de Insalubridade e Perículosidade
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> PGR - Programa de Gerenciamento de Riscos
+                </li>
+                <li class="li-cinza"><i class="fa fa-arrow-circle-right"></i> PPR - Pograma de Proteção Respiratória</li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> PPRAMP - Plano de Prevenção e Riscos de Acidentes com Materiais Perfurocortantes 
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> PPEOB - Programa de Prevenção da Exposição Ocupacional ao Benzeno
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> PPRPS - Programa de Prevenção de Riscos em Prensas e Similares
+                </li>
+                <li class="li-cinza"><i class="fa fa-arrow-circle-right"></i> PGRTA - Programa de Gerenciamento de Riscos no Trabalho Aquaviário</li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> PGRTR - Programa de Gerenciamento de Riscos no Trabalho Rural
+                </li>
+    
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> DIR - Declaração de Insenção dos Riscos
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> E-SOCIAL: S-2210 - CAT | S-2220 - ASO | S-2240 - SST
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> OR - Ordem de Serviço
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> Ficha e controle de entrega de EPI
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Checklist de inspeções
+                </li>
+                
+              </ul>
+
+              <h3 class="h3-cabecario">
+                Treinamentos
+              </h3>
+
+              <ul>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> NR1 - Ordem de Serviço de Serviço
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> NR5 - CIPA 
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> NR6 - EPI 
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right">NR20 - Liquidos Inflamáveis</i> 
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Combate a Incêndio
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> NR33 - Espaço Confinado
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> NR35 - Trabalho em Altura
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> NR35 - Trabalho em Altura
+                </li>
+              </ul>
+
+
+              <h3 class="h3-cabecario">
+                Metodologia,  Equpamentos e Técnicas
+              </h3>
+
+              <ul>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> 5s
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> 5W2H
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Diagrama de Ishikawa
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> Dose Projetada - Ruído
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Dose Projetada IBUTG equacionado - Calor
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> Dose Projeta IBUTG equacionado - Calor
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Dosímetro e Decíbelimetro - INSTRUTERM
+                </li>
+                <li class="li">
+                  <i class="fa fa-arrow-circle-right"></i> Termômetro de Globo Bulbo Seco úmido - IBUTG - TGM-200 - HOMIS
+                </li>
+                <li class="li-cinza">
+                  <i class="fa fa-arrow-circle-right"></i> Medidor de Gás Portatil Dräger X-am® 3500
+                </li>
+              </ul>
+
+            <div class="button">Fechar</div>
+          </dialog>
 
           <!-- <div id="fade" class="hide"></div>
           <div id="modal" class="hide">
