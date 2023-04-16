@@ -272,6 +272,47 @@ a#Certificado {
   margin: 10px 0;
 }
 
+/* project.html */
+#Sistema-Incendio {
+  height: 550px;
+  height: 550px;
+}
+#Sistema-Incendio,
+h2,
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.div-img-sistema {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+
+.img-sistemas{
+  width: 160px;
+  height: 100px;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+#linha{
+  width: 100px;
+  border-top: 1px solid black;
+}
+
 /* teste */
 
 /* #fade{

@@ -1,3 +1,7 @@
+
+
+
+
 function calcularIdade(dataNascimento) {
   var dataAtual = new Date();
   var anoAtual = dataAtual.getFullYear();
@@ -39,31 +43,77 @@ const mostrarTexto = () => {
   
   field.body.appendChild(text)
   field.body.appendChild(text1)
+  
+  
 }
 
-mostrarTexto()
-
-const button1 = document.querySelector('#Academica');
-const button2 = document.querySelector('#Linguagens');
-const button3 = document.querySelector('#SST');
-const modal1 = document.querySelector('#dialog-formacao');
-const modal2 = document.querySelector('#dialog-linguagens');
-const modal3 = document.querySelector('#dialog-SST');
-const closeButtons = document.querySelectorAll(".button");
-
-const AllButton = [button1, button2, button3]
-const Allmodal = [modal1, modal2,modal3]
 
 
-AllButton.forEach((button, index) => {
+// Page training 
+function showModalPageTraning() {
+  const buttonAcademia = document.querySelector('#Academica');
+  const buttonLinguagens = document.querySelector('#Linguagens');
+  const buttonSST = document.querySelector('#SST');
+  const modalFormacao = document.querySelector('#dialog-formacao');
+  const modalLinguagens = document.querySelector('#dialog-linguagens');
+  const modalSST = document.querySelector('#dialog-SST');
+  const closeButtonTraning = document.querySelectorAll(".button");
+
+  const AllButtonTraning = [buttonAcademia, buttonLinguagens, buttonSST]
+  const AllmodalTraning = [modalFormacao, modalLinguagens,modalSST]
+
+  AllButtonTraning.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        AllmodalTraning[index].showModal();
+           
+      });
+  });
+
+  closeButtonTraning.forEach((button) => {
+      
+      button.addEventListener('click', () => {
+          button.closest('dialog').close();
+          Escclose()
+          
+      });
+  });
+}
+
+// showModalPageTraning(); // chamando a função
+
+// Page project
+
+function showModalPageProject() {
+const buttonBurning = document.querySelector('#button-sistema-gestao');
+const buttonLavori = document.querySelector('#button-sistema-lavori');
+const buttonSiteDev = document.querySelector('#button-site-dev');
+const buttonSiteComics = document.querySelector('#button-site-DC-COMICS');
+const buttonGoBus = document.querySelector('#button-site-GO-BUS');
+const buttonSitAdvertencia= document.querySelector('#button-sistema-Advertencia');
+const buttonDoseProjetada = document.querySelector('#button-doseProjetada');
+
+const modalBurning = document.querySelector('#Sistema-Incendio');
+const modalLavori = document.querySelector('#sitema-Lavori');
+const modalSiteDev = document.querySelector('#site-Dev');
+const modalDCcomics = document.querySelector('#Site-COMICS');
+const modalGoBus = document.querySelector('#site-GO-BUS');
+const modalSistemAdvetemcia = document.querySelector('#Sistem-Adertencia');
+const modaldoseProjetada = document.querySelector('#doseProjetada');
+
+const closeButtonsProject = document.querySelectorAll(".button");
+
+const AllButtonProject = [buttonBurning, buttonLavori, buttonSiteDev, buttonSiteComics , buttonGoBus,buttonSitAdvertencia, buttonDoseProjetada ]
+const AllmodalProject = [modalBurning, modalLavori,modalSiteDev, modalDCcomics, modalGoBus, modalSistemAdvetemcia, modaldoseProjetada]
+
+
+AllButtonProject.forEach((button, index) => {
     button.addEventListener('click', () => {
-        Allmodal[index].showModal();
+      AllmodalProject[index].showModal();
          
     });
 });
 
-closeButtons.forEach((button) => {
-    
+closeButtonsProject.forEach((button) => {
     button.addEventListener('click', () => {
         button.closest('dialog').close();
         Escclose()
@@ -71,6 +121,17 @@ closeButtons.forEach((button) => {
     });
 });
 
+}
+
+
+
+function windowsLocation () {
+  if (window.location.pathname === '/about.html') return mostrarTexto();
+  if (window.location.pathname === '/training.html') return showModalPageTraning();
+  if (window.location.pathname === '/project.html') return showModalPageProject();
+}
+
+windowsLocation()
 
 // const text = document.getElementById('text')
 // const text1 = document.getElementById('text1')
