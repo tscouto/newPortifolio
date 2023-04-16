@@ -95,6 +95,7 @@ div.esquerda {
   width: 200px;
   width: 200px;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 div.icones {
@@ -122,9 +123,7 @@ div.icones {
 }
 
 #text {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 0 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
   color: black;
@@ -132,7 +131,7 @@ div.icones {
 }
 
 #text1 {
-  margin: 0 20px;
+  padding: 0 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
   color: black;
@@ -151,7 +150,7 @@ div.icones {
   color: #cc4b2c;
 }
 div.icones-tecnologia {
-  width: 390px;
+  width: 500px;
   text-align: center;
 }
 div.icones-tecnologia,
@@ -164,53 +163,20 @@ h1 {
   padding-left: 3px;
 }
 
-.Academica {
+.div-button {
   background-color: #444444;
   color: white;
   text-align: center;
   width: 600px;
   padding: 20px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: "Anton", sans-serif;
   font-weight: bolder;
   border-radius: 30px;
   cursor: pointer;
 }
 
-.Academica:hover {
-  background-color: #645b5b;
-  cursor: pointer;
-}
-
-.Linguagens {
-  background-color: #444444;
-  color: white;
-  text-align: center;
-  width: 600px;
-  padding: 20px;
-  margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
-  font-weight: bolder;
-  border-radius: 30px;
-}
-div.Linguagens:hover {
-  background-color: #645b5b;
-  cursor: pointer;
-}
-
-div.SST {
-  background-color: #444444;
-  color: white;
-  text-align: center;
-  width: 600px;
-  padding: 20px;
-  margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
-  font-weight: bolder;
-  border-radius: 30px;
-}
-div.SST:hover {
+.div-button:hover {
   background-color: #645b5b;
   cursor: pointer;
 }
@@ -254,7 +220,6 @@ dialog {
 .button:hover {
   background-color: darkgrey;
 }
-
 
 /* segundo teste */
 
@@ -303,7 +268,7 @@ a#Certificado {
   padding: 3px;
   background-color: rgb(222, 215, 215);
 }
-.h3-cabecario{
+.h3-cabecario {
   margin: 10px 0;
 }
 
