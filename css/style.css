@@ -313,6 +313,14 @@ figcaption {
   border-top: 1px solid black;
 }
 
+/* Page experience */
+
+#lavori {
+  width: 100px;
+}
+#dialog-lavori{
+  height: 500px;
+}
 /* teste */
 
 /* #fade{

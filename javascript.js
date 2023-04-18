@@ -25,7 +25,7 @@ function calcularIdade(dataNascimento) {
   return idade;
 }
 
-// Exemplo de uso:
+
 var dataNascimento = new Date('1989-11-02'); // Substitua com sua data de nascimento
 var idade = calcularIdade(dataNascimento);
 // console.log(idade)
@@ -79,9 +79,7 @@ function showModalPageTraning() {
   });
 }
 
-// showModalPageTraning(); // chamando a função
 
-// Page project
 
 function showModalPageProject() {
 const buttonBurning = document.querySelector('#button-sistema-gestao');
@@ -127,12 +125,42 @@ closeButtonsProject.forEach((button) => {
 
 }
 
+function showModalPageExperience() {
+  const buttonLavori = document.querySelector('#button-lavori');
+  const buttonSulNorte = document.querySelector('#button-sulnorte');
+  const buttonFerju = document.querySelector('#button-ferju');
+  const modalLavori = document.querySelector('#dialog-lavori');
+  const modalsulNorte = document.querySelector('#dialog-sulnorte');
+  const modalferju = document.querySelector('#dialog-ferju');
+  const closeButtonTraning = document.querySelectorAll(".button");
+
+  const AllButtonExperience = [buttonLavori, buttonSulNorte, buttonFerju]
+  const AllmodalExperience = [modalLavori, modalsulNorte,modalferju]
+
+  AllButtonExperience.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        AllmodalExperience[index].showModal();
+           
+      });
+  });
+
+  closeButtonTraning.forEach((button) => {
+      
+      button.addEventListener('click', () => {
+          button.closest('dialog').close();
+          Escclose()
+          
+      });
+  });
+}
+
 
 
 function windowsLocation () {
   if (window.location.pathname === '/about.html') return mostrarTexto();
   if (window.location.pathname === '/training.html') return showModalPageTraning();
   if (window.location.pathname === '/project.html') return showModalPageProject();
+  if (window.location.pathname === '/experience.html') return showModalPageExperience();
 }
 
 windowsLocation()
