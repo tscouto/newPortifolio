@@ -351,6 +351,17 @@ figcaption {
   padding: 0;
  
 }
+
+
+/* page contate */
+
+#post {
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  border-radius: 0px;
+  font-size: 10px;
+}
 /* teste */
 
 /* #fade{
