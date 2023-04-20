@@ -129,7 +129,8 @@ div.icones {
 }
 
 #text {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
   color: black;
@@ -137,7 +138,8 @@ div.icones {
 }
 
 #text1 {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: justify;
   font-family: "Anton", sans-serif;
   color: black;
@@ -295,13 +297,12 @@ a#Certificado {
 
 /* project.html */
 #Sistema-Incendio {
-  height: 550px;
-
+  height: 500px;
 }
 
 #Sistema-Incendio,
 h2,
-p {
+.incendio{
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -334,8 +335,6 @@ figcaption {
   width: 100px;
   border-top: 1px solid black;
 }
-
-
 
 /* Page experience */
 
@@ -371,9 +370,7 @@ figcaption {
 
 .h2-SULNORTE {
   padding: 0;
-
 }
-
 
 /* page contate */
 
@@ -390,7 +387,6 @@ figcaption {
   font-size: 15px;
   font-weight: bolder;
   font-family: "Anton", sans-serif;
-
 }
 
 #post:hover {
@@ -400,19 +396,20 @@ figcaption {
 
 form {
   border: 1px solid black;
+  background-color: white;
   padding: 40px;
   border-radius: 20px;
   color: #cc4b2c;
   font-weight: bolder;
   font-family: "Anton", sans-serif;
-  
+  position: absolute;
+  /* overflow: hidden; */
 }
 
 table,
 tr,
 td {
   padding-bottom: 5px;
-
 }
 
 input {
@@ -422,124 +419,106 @@ input {
 #h1-contato {
   padding-bottom: 20px;
   font-family: "Anton", sans-serif;
-  
 }
 
-#form-header{
+#form-header {
   text-align: center;
   padding-bottom: 15px;
   font-family: "Anton", sans-serif;
   font-size: 25px;
-
 }
 
-
 .box {
-
   position: relative;
-  width: 430px;
-  height: 430px;
-  background-color: #1c1c1c;
-  border-radius: 8px;
+  width: 399px;
+  padding: 2px;
+  height: 476px;
+  border-radius: 22px;
+   background-color: white; 
   overflow: hidden;
-
 }
 
 .box::before {
-
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 430px;
-  height: 530px;
+  width: 400px;
+  height: 470px;
   background: linear-gradient(0deg, transparent, #f81e01d5, #f81e01d5);
   transform-origin: bottom right;
   animation: animacao 6s linear infinite;
-
+  /* overflow: hidden; */
 }
 
-.box::after {
-
-  content: '';
+/* .box::after {
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 430px;
-  height: 530px;
+  width: 400px;
+  height: 430px;
   background: linear-gradient(0deg, transparent, #f81e01d5, #f81e01d5);
   transform-origin: bottom right;
   animation: animacao 6s linear infinite;
   animation-delay: -3s;
-
-}
+  overflow: hidden;
+} */
 
 @keyframes animacao {
+  0% {
+    transform: rotate(0deg);
+  }
 
-0% {
-
-  transform: rotate(0deg);
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-100% {
-
-  transform: rotate(360deg);
-
+/* #fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
 }
 
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  width: 500px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
 }
 
-.box h4 {
-
-  margin: 100px;
-
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
+.modal-body p {
+  margin-bottom: 1rem;
+}
 
-/* #fade{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100% ;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 5;
-  }
-  
-  #modal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    z-index: 10;
-    width: 500px;
-    max-width: 90%;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-  }
-  
-  .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem ;
-  }
-  
-  .modal-body p {
-    margin-bottom: 1rem;
-  } 
-  
-  #modal.hide,
-  #fade.hide {
-    display: none;
-  }
-  
-  #fade,#modal{
-    transition: .5s;
-    opacity: 1;
-    pointer-events: all;
-  }
+#modal.hide,
+#fade.hide {
+  display: none;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+} */
