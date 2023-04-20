@@ -198,9 +198,11 @@ dialog {
 }
 
 #dialog-SST {
-  height: 700px;
+  height: 500px;
 }
-
+#dialog-linguagens {
+  height: 500px;
+}
 #tempo-de-curso {
   color: darkgray;
 }
@@ -253,7 +255,7 @@ dialog {
 }
 
 a#Certificado {
-  color: #ba1d1d;
+  color: #706f6f;
   font-weight: bolder;
 }
 .h2-Cabecario {
@@ -275,7 +277,7 @@ a#Certificado {
 /* project.html */
 #Sistema-Incendio {
   height: 550px;
-  height: 550px;
+  
 }
 #Sistema-Incendio,
 h2,
@@ -313,13 +315,41 @@ figcaption {
   border-top: 1px solid black;
 }
 
+
+
 /* Page experience */
 
 #lavori {
   width: 100px;
 }
+
+#lavori1{
+  width: 108px;
+}
 #dialog-lavori{
   height: 500px;
+}
+
+#sulNorte {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 80px;
+}
+#sulNorte1{
+  right: 34px;
+  width: 80px;
+  position: absolute;
+  top: 250px;
+}
+
+#dialog-sulnorte{
+  height: 500px;
+}
+
+.h2-SULNORTE{
+  padding: 0;
+ 
 }
 /* teste */
 
