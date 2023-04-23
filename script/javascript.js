@@ -161,6 +161,12 @@ function windowsLocation () {
   if (window.location.pathname === '/training.html') return showModalPageTraning();
   if (window.location.pathname === '/project.html') return showModalPageProject();
   if (window.location.pathname === '/experience.html') return showModalPageExperience();
+
+  if (location.pathname === '/about.html') return mostrarTexto();
+  if (location.pathname === '/training.html') return showModalPageTraning();
+  if (location.pathname === '/project.html') return showModalPageProject();
+  if (location.pathname === '/experience.html') return showModalPageExperience();
+
 }
 
 windowsLocation()
