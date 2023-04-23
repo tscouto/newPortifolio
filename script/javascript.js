@@ -157,10 +157,10 @@ function showModalPageExperience() {
 
 
 function windowsLocation () {
-  if (document.location.pathname === '/about.html') return mostrarTexto();
-  if (document.location.pathname === '/training.html') return showModalPageTraning();
-  if (document.location.pathname === '/project.html') return showModalPageProject();
-  if (document.location.pathname === '/experience.html') return showModalPageExperience();
+  if (document.location.href === '/about.html') return mostrarTexto();
+  if (document.location.href === '/training.html') return showModalPageTraning();
+  if (document.location.href === '/project.html') return showModalPageProject();
+  if (document.location.href === '/experience.html') return showModalPageExperience();
 
 
 }
