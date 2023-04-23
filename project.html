@@ -18,10 +18,10 @@
       <div class="direta">
         <div class="nav">
           <ul>
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="about.html">Sobre</a> </li>
-            <li><a href="training.html">Formação e Habilidades</a> </li>
-            <li><a href="project.html">Projetos</a> </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="training.html">Formação e Habilidades</a></li>
+            <li><a href="project.html">Projetos</a></li>
             <li><a href="experience.html">Experiência Profissional</a></li>
             <li><a href="contate.html">Contato</a></li>
           </ul>
@@ -725,10 +725,16 @@
           <dialog id="guessingGame">
             <h2>Guessing game - Ainda em desenvolvimento</h2>
             <p class="incendio">
-              Esse projeto é sistema de um jogo de perguntas de respostas. Onde
-              informa terá 4 alternativas, sendo que somente 1 é a resposta
-              correta. Se responder corretamente, ficará com botão verde e dará
-              mais detalhes sobre a resposta.
+              É um site de um game de perguntas e respostas, onde o jogador ao
+              entrar no jogo, terá uma pergunta onde terá quatro alternativas.
+              Quando ele selecionar a resposta escolhida, irá mostrar na tela o
+              botão em outra cor, informando se realmente o jogador tem certeza
+              de que aquela opção que escolheu é a correta. Se sim, irá mostrar
+              o resultado, se for a correta, o botão irá ficar com a cor verde
+              com nome certo a resposta, em também na tela irá mostrar os
+              detalhes de cada opção, além disso irá mostrar um marcador de
+              quantas perguntas respondidas e a porcentagem de perguntas
+              corretas.
             </p>
             <p class="incendio">
               Esse projeto feito em trabalho em conjuto com Benicio, Patricia,
@@ -737,7 +743,7 @@
             <p class="incendio">
               Foi utilizado linguagem como html, css e javascript. Além de
               ferramentas como Jira, bitburkit. A metologia que utilizamos foi a
-              metologia scruim, onde cada um ficou responsável por uma função
+              metologia scrum, onde cada um ficou responsável por uma função
               como: Scrum Master, Develop, leader, PO product owner
             </p>
 
@@ -746,10 +752,61 @@
               membros
             </p>
             <ul>
-              <li><a href="">Benicio</a></li>
-              <li><a href="">Patricia</a></li>
-              <li><a href="">João</a></li>
+              <li><a href="https://github.com/liconeto">Benicio</a></li>
+              <li><a href="https://github.com/Patriciamativi">Patricia</a></li>
+              <li><a href="https://github.com/joaoluke">João</a></li>
             </ul>
+
+            <div class="div-img-sistema">
+              <div class="image-container">
+                <a
+                  href="image/guiness pagina principal.png"
+                  title="Clique na imagem"
+                  target="_blank"
+                  ><img
+                    class="img-sistemas"
+                    src="image/guiness pagina principal.png"
+                    alt="tela de login"
+                /></a>
+                <figcaption>Tela Principal</figcaption>
+              </div>
+              <div class="image-container">
+                <a
+                  href="image/guiness pagina de perguntas.png"
+                  title="Clique na imagem"
+                  target="_blank"
+                  ><img
+                    class="img-sistemas"
+                    src="image/guiness pagina de perguntas.png"
+                    alt=""
+                /></a>
+                <figcaption>Tela de perguntas</figcaption>
+              </div>
+              <div class="image-container">
+                <a
+                  href="image/guiness pagina de perguntas tem certeza.png"
+                  title="Clique na imagem"
+                  target="_blank"
+                  ><img
+                    class="img-sistemas"
+                    src="image/guiness pagina de perguntas tem certeza.png"
+                    alt=""
+                /></a>
+                <figcaption>Tem Certeza?</figcaption>
+              </div>
+              <div class="image-container">
+                <a
+                  href="image/guinesse resposta correta.png"
+                  title="Clique na imagem"
+                  target="_blank"
+                  ><img
+                    class="img-sistemas"
+                    src="image/guinesse resposta correta.png"
+                    alt=""
+                /></a>
+                <figcaption>Resposta correta!</figcaption>
+              </div>
+            </div>
 
             <hr class="hr" />
             <div class="button">Fechar</div>
@@ -758,45 +815,72 @@
       </div>
     </section>
   </body>
-  <script >
+  <script>
+    function showModalPageProject() {
+      const buttonBurning = document.querySelector("#button-sistema-gestao");
+      const buttonLavori = document.querySelector("#button-sistema-lavori");
+      const buttonSiteDev = document.querySelector("#button-site-dev");
+      const buttonSiteComics = document.querySelector("#button-site-DC-COMICS");
+      const buttonPortoWine = document.querySelector("#button-site-PortWine");
+      const buttonGoBus = document.querySelector("#button-site-GO-BUS");
+      const buttonSitAdvertencia = document.querySelector(
+        "#button-sistema-Advertencia"
+      );
+      const buttonDoseProjetada = document.querySelector(
+        "#button-doseProjetada"
+      );
+      const buttonguessingGame = document.querySelector("#button-guessingGame");
 
-function showModalPageProject() {
-const buttonBurning = document.querySelector('#button-sistema-gestao');
-const buttonLavori = document.querySelector('#button-sistema-lavori');
-const buttonSiteDev = document.querySelector('#button-site-dev');
-const buttonSiteComics = document.querySelector('#button-site-DC-COMICS');
-const buttonPortoWine = document.querySelector('#button-site-PortWine');
-const buttonGoBus = document.querySelector('#button-site-GO-BUS');
-const buttonSitAdvertencia= document.querySelector('#button-sistema-Advertencia');
-const buttonDoseProjetada = document.querySelector('#button-doseProjetada');
-const buttonguessingGame = document.querySelector('#button-guessingGame');
+      const modalBurning = document.querySelector("#Sistema-Incendio");
+      const modalLavori = document.querySelector("#sitema-Lavori");
+      const modalSiteDev = document.querySelector("#site-Dev");
+      const modalDCcomics = document.querySelector("#Site-COMICS");
+      const modalPortWine = document.querySelector("#Site-PortWine");
+      const modalGoBus = document.querySelector("#site-GO-BUS");
+      const modalSistemAdvetemcia =
+        document.querySelector("#Sistem-Adertencia");
+      const modaldoseProjetada = document.querySelector("#doseProjetada");
+      const modalguessingGame = document.querySelector("#guessingGame");
 
-const modalBurning = document.querySelector('#Sistema-Incendio');
-const modalLavori = document.querySelector('#sitema-Lavori');
-const modalSiteDev = document.querySelector('#site-Dev');
-const modalDCcomics = document.querySelector('#Site-COMICS');
-const modalPortWine = document.querySelector('#Site-PortWine');
-const modalGoBus = document.querySelector('#site-GO-BUS');
-const modalSistemAdvetemcia = document.querySelector('#Sistem-Adertencia');
-const modaldoseProjetada = document.querySelector('#doseProjetada');
-const modalguessingGame = document.querySelector('#guessingGame');
+      const closeButtonsProject = document.querySelectorAll(".button");
 
-const closeButtonsProject = document.querySelectorAll(".button");
+      const AllButtonProject = [
+        buttonBurning,
+        buttonLavori,
+        buttonSiteDev,
+        buttonSiteComics,
+        buttonGoBus,
+        buttonSitAdvertencia,
+        buttonDoseProjetada,
+        buttonPortoWine,
+        buttonguessingGame,
+      ];
+      const AllmodalProject = [
+        modalBurning,
+        modalLavori,
+        modalSiteDev,
+        modalDCcomics,
+        modalGoBus,
+        modalSistemAdvetemcia,
+        modaldoseProjetada,
+        modalPortWine,
+        modalguessingGame,
+      ];
 
-const AllButtonProject = [buttonBurning, buttonLavori, buttonSiteDev, buttonSiteComics , buttonGoBus,buttonSitAdvertencia, buttonDoseProjetada, buttonPortoWine,buttonguessingGame ]
-const AllmodalProject = [modalBurning, modalLavori,modalSiteDev, modalDCcomics, modalGoBus, modalSistemAdvetemcia, modaldoseProjetada, modalPortWine, modalguessingGame]
+      AllButtonProject.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          AllmodalProject[index].showModal();
+        });
+      });
 
+      closeButtonsProject.forEach((button) => {
+        button.addEventListener("click", () => {
+          button.closest("dialog").close();
+          Escclose();
+        });
+      });
+    }
 
-AllButtonProject.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      AllmodalProject[index].showModal();
-         
-    });
-});
-
-
-}
-
-showModalPageProject()
+    showModalPageProject();
   </script>
 </html>
