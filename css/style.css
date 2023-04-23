@@ -11,15 +11,28 @@ body {
 section {
   margin: 50px;
   background-color: white;
-  height: 800px;
+  height: 700px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 0px black;
 }
 
+/* @media ( min-width: 800px ) {
+  
+  .direta {
+    width: 5%;
+    float: left;
+    height: 800px;
+    background-color: #cc4b2c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: red;
+  }
+} */
+
 .direta {
-  width: 500px;
+  width: 30%;
   float: left;
-  height: 800px;
+  height: 100%;
   background-color: #cc4b2c;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -29,7 +42,7 @@ section {
   display: flex;
   flex-direction: column;
   /* text-align: center; */
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 50px;
 }
 
@@ -53,7 +66,7 @@ section {
 /* Configuracao especifica da pagina index */
 div.sobre {
   /* text-align: center; */
-  height: 800px;
+  height: 100%;
 }
 
 .sobre h1 {
@@ -93,11 +106,13 @@ div.esquerda {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
+  
 }
 
 #img-Foto {
-  width: 200px;
-  width: 200px;
+  width: 30%;
+  width: 30%;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -302,7 +317,7 @@ a#Certificado {
 
 #Sistema-Incendio,
 h2,
-.incendio{
+.incendio {
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -349,6 +364,8 @@ figcaption {
 #dialog-lavori {
   height: 500px;
 }
+
+
 
 #sulNorte {
   position: absolute;
@@ -434,7 +451,7 @@ input {
   padding: 2px;
   height: 476px;
   border-radius: 22px;
-   background-color: white; 
+  background-color: white;
   overflow: hidden;
 }
 
@@ -474,6 +491,86 @@ input {
     transform: rotate(360deg);
   }
 }
+
+/* @media screen and (min-width: 380px) {
+  section {
+    width: 30%;
+  }
+  .direta {
+    width: 25%;
+    float: left;
+    height: 100%;
+  }
+
+  .nav ul li {
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  div.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+  }
+} */
+
+/* @media screen and (min-width: 576px) {
+  section {
+    width: 50%;
+  }
+
+  .direta {
+    width: 30%;
+    float: left;
+    height: 100%;
+  }
+
+  .nav ul li {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  div.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+  }
+} */
+
+/* 
+@media screen and (min-width: 992px) {
+  section {
+    width: 80%;
+  }
+  .direta {
+    width: 35%;
+    float: left;
+    height: 100%;
+  }
+  .nav ul li {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .sobre,
+  div.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+  }
+} */
 
 /* #fade {
   position: fixed;
@@ -521,4 +618,4 @@ input {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
-} */
+}  */
