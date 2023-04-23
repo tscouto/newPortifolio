@@ -156,16 +156,19 @@ function showModalPageExperience() {
 
 
 
-function windowsLocation () {
-  if (document.location.href === '/about.html') return mostrarTexto();
-  if (document.location.href === '/training.html') return showModalPageTraning();
-  if (document.location.href === '/project.html') return showModalPageProject();
-  if (document.location.href === '/experience.html') return showModalPageExperience();
+// function localicationWeb () {
+ 
+//   if (document.location.href === '/about.html') {
+//    mostrarTexto();
+//   }
+//   // if (window.location.href=== '/training.html') return showModalPageTraning();
+//   // if (window.location.href === '/project.html') return showModalPageProject();
+//   // if (window.location.href === '/experience.html') return showModalPageExperience();
 
 
-}
 
-windowsLocation()
+
+
 
 // const text = document.getElementById('text')
 // const text1 = document.getElementById('text1')

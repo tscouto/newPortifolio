@@ -216,7 +216,40 @@
       </div>
     </section>
   </body>
-  <script src="script/javascript.js"></script>
+  <script >
+
+function showModalPageExperience() {
+  const buttonLavori = document.querySelector('#button-lavori');
+  const buttonSulNorte = document.querySelector('#button-sulnorte');
+  const buttonFerju = document.querySelector('#button-ferju');
+  const modalLavori = document.querySelector('#dialog-lavori');
+  const modalsulNorte = document.querySelector('#dialog-sulnorte');
+  const modalferju = document.querySelector('#dialog-ferju');
+  const closeButtonTraning = document.querySelectorAll(".button");
+
+  const AllButtonExperience = [buttonLavori, buttonSulNorte, buttonFerju]
+  const AllmodalExperience = [modalLavori, modalsulNorte,modalferju]
+
+  AllButtonExperience.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        AllmodalExperience[index].showModal();
+           
+      });
+  });
+
+  closeButtonTraning.forEach((button) => {
+      
+      button.addEventListener('click', () => {
+          button.closest('dialog').close();
+          Escclose()
+          
+      });
+  });
+}
+
+showModalPageExperience()
+
+  </script>
 </html>
 
 <!-- <div id="fade" class="hide"></div>
