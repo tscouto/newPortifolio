@@ -18,12 +18,12 @@
       <div class="direta">
         <div class="nav">
           <ul>
-            <li><a href="index.html">Home</a> </li>
-          <li><a href="about.html">Sobre</a> </li>
-          <li><a href="training.html">Formação e Habilidades</a> </li>
-          <li><a href="project.html">Projetos</a> </li>
-          <li><a href="experience.html">Experiência Profissional</a></li>
-          <li><a href="contate.html">Contato</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="training.html">Formação e Habilidades</a></li>
+            <li><a href="project.html">Projetos</a></li>
+            <li><a href="experience.html">Experiência Profissional</a></li>
+            <li><a href="contate.html">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -176,7 +176,7 @@
               reuniões da CIPA.
             </p>
             <p class="p-dialogo">Melhorias:</p>
-            <p class="p-dialogo" >
+            <p class="p-dialogo">
               No começo da gestão até o final da gestão conseguir realizar
               melhorias na segurança do trabalho em 30%. Além disso, criei
               ferramentas de controle de gestão na área de segurançã do
@@ -216,40 +216,7 @@
       </div>
     </section>
   </body>
-  <script >
-
-function showModalPageExperience() {
-  const buttonLavori = document.querySelector('#button-lavori');
-  const buttonSulNorte = document.querySelector('#button-sulnorte');
-  const buttonFerju = document.querySelector('#button-ferju');
-  const modalLavori = document.querySelector('#dialog-lavori');
-  const modalsulNorte = document.querySelector('#dialog-sulnorte');
-  const modalferju = document.querySelector('#dialog-ferju');
-  const closeButtonTraning = document.querySelectorAll(".button");
-
-  const AllButtonExperience = [buttonLavori, buttonSulNorte, buttonFerju]
-  const AllmodalExperience = [modalLavori, modalsulNorte,modalferju]
-
-  AllButtonExperience.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        AllmodalExperience[index].showModal();
-           
-      });
-  });
-
-  closeButtonTraning.forEach((button) => {
-      
-      button.addEventListener('click', () => {
-          button.closest('dialog').close();
-          Escclose()
-          
-      });
-  });
-}
-
-showModalPageExperience()
-
-  </script>
+  <script src="./script/experience.js"></script>
 </html>
 
 <!-- <div id="fade" class="hide"></div>
