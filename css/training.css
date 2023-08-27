@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: bisque;
+}
+
+section {
+    margin: 50px;
+    background-color: white;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 0px black;
+}
+
+.direta {
+    width: 30%;
+    float: left;
+    height: 100%;
+    background-color: #cc4b2c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.nav ul li {
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* Configuracao especifica da pagina index */
+div.sobre {
+    height: 100%;
+}
+
+.sobre h1 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #cc4b2c;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: "Anton", sans-serif;
+}
+
+.sobre h2 {
+    margin-bottom: 30px;
+    color: #cc4b2c;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+}
+
+.sobre button {
+    padding: 15px;
+    background-color: #cc4b2c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.sobre button:hover {
+    cursor: pointer;
+}
+
+.sobre,
+div.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#img-Foto {
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+div.icones {
+    margin: 20px 0px;
+}
+
+.icones img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* Pagina Formacao.html */
+.sobre-formacao {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #cc4b2c;
+}
+
+div.icones-tecnologia {
+    width: 500px;
+    text-align: center;
+}
+
+div.icones-tecnologia,
+h1 {
+    margin-bottom: 30px;
+}
+
+.icones-tecnologia img {
+    width: 40px;
+    padding-left: 3px;
+}
+
+.div-button {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.div-button:hover {
+    background-color: #645b5b;
+    cursor: pointer;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 /0.5);
+}
+
+dialog {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 /0.3);
+    padding: 50px;
+    width: 800px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dialog-SST {
+    height: 500px;
+}
+
+#dialog-linguagens {
+    height: 500px;
+}
+
+#tempo-de-curso {
+    color: darkgray;
+}
+
+.button {
+    border: none;
+    width: 80px;
+    padding: 8px;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 45%;
+    background-color: #2848e9;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+#unicesumar {
+    width: 40px;
+}
+
+#cedup {
+    width: 50px;
+    height: 30px;
+}
+
+.lado-foto-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-dialogo {
+    margin-bottom: 10px;
+}
+
+.h2-Cedup {
+    margin-bottom: 10px;
+}
+
+.p-conclusao {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-family: "Anton", sans-serif;
+}
+
+.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a#Certificado {
+    color: #706f6f;
+    font-weight: bolder;
+}
+
+.h2-Cabecario {
+    margin-bottom: 10px;
+}
+
+.li-cinza {
+    padding: 3px;
+    background-color: rgb(161, 159, 159);
+}
+
+.li {
+    padding: 3px;
+    background-color: rgb(222, 215, 215);
+}
+
+.h3-cabecario {
+    margin: 10px 0;
+}
+
+/* Estilos para tela 1920px (Full HD) */
+@media screen and (min-width: 1920px) {
+    section {
+        margin: 100px;
+    }
+
+    .direta {
+        width: 20%;
+        float: left;
+    }
+
+    .nav {
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    .sobre h1 {
+        font-size: 50px;
+    }
+
+    .sobre h2 {
+        font-size: 25px;
+    }
+
+    .sobre button {
+        width: 220px;
+    }
+
+    #img-Foto {
+        width: 15%;
+    }
+
+    .sobre-formacao {
+        height: 1000px;
+    }
+
+    div.icones-tecnologia {
+        width: 700px;
+    }
+
+    .div-button {
+        width: 500px;
+    }
+
+    dialog {
+        width: 1000px;
+    }
+}
+
+/* Estilos para tela 1080px */
+@media screen and (max-width: 1080px) {
+    section {
+        margin: 40px;
+    }
+
+    .nav {
+        margin-top: 80px;
+    }
+
+    .sobre h1 {
+        font-size: 40px;
+    }
+
+    .sobre h2 {
+        font-size: 22px;
+    }
+
+    .sobre button {
+        width: 200px;
+    }
+
+    #img-Foto {
+        width: 18%;
+    }
+
+    .sobre-formacao {
+        height: 850px;
+    }
+
+    div.icones-tecnologia {
+        width: 600px;
+    }
+
+    .div-button {
+        width: 450px;
+    }
+
+    dialog {
+        width: 900px;
+    }
+}
+
+/* Estilos para tela 768px */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 20px;
+        height: auto;
+    }
+    .nav {
+        margin: 20px;
+        align-items: center;
+    }
+
+    .nav ul li {
+        font-size: 22px;
+        padding-bottom: 25px;
+        
+    }
+
+    .direta {
+        width: 100%;
+        float: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .sobre h1 {
+        font-size: 35px;
+    }
+
+    .sobre h2 {
+        font-size: 18px;
+    }
+
+    .sobre button {
+        width: 180px;
+    }
+
+    #img-Foto {
+        width: 20%;
+    }
+
+    .sobre-formacao {
+        height: 750px;
+    }
+
+    div.icones-tecnologia {
+        width: 500px;
+    }
+
+    .div-button {
+        width: 350px;
+    }
+
+    dialog {
+        width: 700px;
+    }
+}
+
+/* Estilos para tela 480px */
+@media screen and (max-width: 480px) {
+    section {
+        margin: 10px;
+    }
+
+    .nav {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .nav ul li {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sobre h1 {
+        font-size: 28px;
+    }
+
+    .sobre h2 {
+        font-size: 16px;
+    }
+
+    .sobre button {
+        width: 130px;
+    }
+
+    #img-Foto {
+        width: 40%;
+    }
+
+    .sobre-formacao {
+        height: 800px;
+    }
+
+    div.icones-tecnologia {
+        width: 300px;
+    }
+
+    .div-button {
+        width: 250px;
+    }
+
+    dialog {
+        width: 400px;
+    }
+}
+
+/* Estilos para tela 320px */
+@media screen and (max-width: 320px) {
+    section {
+        margin: 5px;
+    }
+
+    .nav ul li {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    .sobre h1 {
+        font-size: 24px;
+    }
+
+    .sobre h2 {
+        font-size: 14px;
+    }
+
+    .sobre button {
+        width: 120px;
+    }
+
+    #img-Foto {
+        width: 50%;
+    }
+
+    .sobre-formacao {
+        height: 700px;
+    }
+
+    div.icones-tecnologia {
+        width: 250px;
+    }
+
+    .div-button {
+        width: 200px;
+    }
+
+    dialog {
+        width: 300px;
+    }
+}
