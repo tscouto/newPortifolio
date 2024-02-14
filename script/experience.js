@@ -1,13 +1,6 @@
 
 
 
-
-
-
-
-
-
-
 function showModalPageExperience() {
   const buttonLavori = document.querySelector('#button-lavori');
   const buttonSulNorte = document.querySelector('#button-sulnorte');
