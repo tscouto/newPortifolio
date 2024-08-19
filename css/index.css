@@ -1,224 +1,224 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  body {
-    background-color: bisque;
-  }
-  
-  section {
-    margin: 50px;
-    background-color: white;
-    height: 700px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px 0px black;
-  }
-  
- 
-  
-  .direta {
-    width: 30%;
-    float: left;
-    height: 100%;
-    background-color: #cc4b2c;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  
-  .nav {
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    margin-top: 100px;
-    margin-left: 50px;
-  }
-  
-  .nav ul li {
-    padding-bottom: 30px;
-    font-size: 25px;
-    font-weight: bolder;
-  }
-  
-  .nav ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav ul li a:hover {
-    color: black;
-    cursor: pointer;
-  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  /* Configuracao especifica da pagina index */
+body {
+  background-color: bisque;
+}
+
+section {
+  margin: 50px;
+  background-color: white;
+  height: 700px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 0px black;
+}
+
+
+
+.direta {
+  width: 30%;
+  float: left;
+  height: 100%;
+  background-color: #cc4b2c;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.nav ul li {
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Configuracao especifica da pagina index */
 div.sobre {
-    /* text-align: center; */
-    height: 100%;
-  }
-  
-  .sobre h1 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    margin-bottom: 10px;
-    color: #cc4b2c;
-    font-weight: bolder;
-    font-size: 35px;
-    font-family: "Anton", sans-serif;
-  }
-  
-  .sobre h2 {
-    margin-bottom: 30px;
-    color: #cc4b2c;
-    font-weight: bolder;
-    font-size: 20px;
-    font-family: "Anton", sans-serif;
-  }
-  
-  .sobre button {
-    padding: 15px;
-    background-color: #cc4b2c;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    width: 180px;
-  }
-  
-  .sobre button:hover {
-    cursor: pointer;
-  }
-  
-  .sobre,
-  div.esquerda {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    
-  }
-  
-  #img-Foto {
-    width: 20%;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  div.icones {
-    margin: 20px 0px;
-  }
-  
-  .icones img {
-    width: 50px;
-    height: 50px;
-    height: 50px;
-    padding-left: 10px;
+  /* text-align: center; */
+  height: 100%;
+}
+
+.sobre h1 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-bottom: 10px;
+  color: #cc4b2c;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
+}
+
+.sobre h2 {
+  margin-bottom: 30px;
+  color: #cc4b2c;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+}
+
+.sobre button {
+  padding: 15px;
+  background-color: #cc4b2c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.sobre button:hover {
+  cursor: pointer;
+}
+
+.sobre,
+div.esquerda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+#img-Foto {
+  width: 20%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+div.icones {
+  margin: 20px 0px;
+}
+
+.icones img {
+  width: 50px;
+  height: 50px;
+  height: 50px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 20px;
+    height: auto;
   }
 
-  @media screen and (max-width: 768px) {
-    section {
-        margin: 20px;
-        height: auto;
-    }
-    
-    .direta {
-        width: 100%;
-        float: none;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    
-    .nav {
-        margin: 20px;
-        align-items: center;
-    }
-    
-    .sobre h1 {
-        font-size: 30px;
-    }
-    
-    .sobre h2 {
-        font-size: 18px;
-    }
-    
-    .sobre button {
-        width: 150px;
-    }
-    
-    #img-Foto {
-        width: 30%;
-    }
+  .direta {
+    width: 100%;
+    float: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .nav {
+    margin: 20px;
+    align-items: center;
+  }
+
+  .sobre h1 {
+    font-size: 30px;
+  }
+
+  .sobre h2 {
+    font-size: 18px;
+  }
+
+  .sobre button {
+    width: 150px;
+  }
+
+  #img-Foto {
+    width: 30%;
+  }
 }
 
 /* Mídia Query para tamanhos de tela de celulares */
 @media screen and (max-width: 480px) {
-    section {
-        margin: 10px;
-    }
-    
-    .nav {
-        margin: 10px;
-        text-align: center;
-    }
-    
-    .nav ul li {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .sobre h1 {
-        font-size: 28px;
-    }
-    
-    .sobre h2 {
-        font-size: 16px;
-    }
-    
-    .sobre button {
-        width: 130px;
-    }
-    
-    #img-Foto {
-        width: 40%;
-    }
+  section {
+    margin: 10px;
+  }
+
+  .nav {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .nav ul li {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .sobre h1 {
+    font-size: 28px;
+  }
+
+  .sobre h2 {
+    font-size: 16px;
+  }
+
+  .sobre button {
+    width: 130px;
+  }
+
+  #img-Foto {
+    width: 40%;
+  }
 }
 
 /* Mídia Query para telas maiores (Full HD e acima) */
 @media screen and (min-width: 1920px) {
-    section {
-        margin: 100px;
-    }
-    
-    .direta {
-        width: 20%;
-        float: left;
-    }
-    
-    .nav {
-        margin-top: 150px;
-        margin-left: 100px;
-    }
-    
-    .sobre h1 {
-        font-size: 50px;
-    }
-    
-    .sobre h2 {
-        font-size: 25px;
-    }
-    
-    .sobre button {
-        width: 220px;
-    }
-    
-    #img-Foto {
-        width: 15%;
-    }
+  section {
+    margin: 100px;
+  }
+
+  .direta {
+    width: 20%;
+    float: left;
+  }
+
+  .nav {
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+
+  .sobre h1 {
+    font-size: 50px;
+  }
+
+  .sobre h2 {
+    font-size: 25px;
+  }
+
+  .sobre button {
+    width: 220px;
+  }
+
+  #img-Foto {
+    width: 15%;
+  }
 }
 
 
-   /* @media ( min-width: 800px ) {
+/* @media ( min-width: 800px ) {
     
     .direta {
       width: 5%;
